@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cefas Administration</title>
+    <link rel="stylesheet" href="../css/cefas.css">
 </head>
-
+    
 <body>
-    <h1>Você é um administrador</h1>
+    <header class="site-header">   
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Demand</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="../images/banner-cefas2.jpg" alt="Image 1">
+            <img src="../images/banner-cefas1.jpg" alt="Image 2">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <script src="../js/cefas.js"></script>
+    </div>
+
+    <section>Aleatorio</section>
 </body>
 
 </html>

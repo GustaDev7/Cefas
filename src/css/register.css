@@ -16,7 +16,7 @@ body {
     align-items: center;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Camada de preto com 50% de opacidade */
-    url('../manutençao.jpg'); /* Imagem de fundo */
+    url('../images/manutençao.jpg'); /* Imagem de fundo */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

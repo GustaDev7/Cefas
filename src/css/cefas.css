@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Arial, sans-serif;
+}
+
+.site-header {
+    background-color: #111;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    text-transform: uppercase;
+}
+
+/* Estilo do nav */
+.site-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo da lista */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo dos itens da lista */
+.nav-item {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Estilo dos links */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+.nav-link:hover {
+    color: #21d4fd;
+}
+
+
+/* Estilos para o contêiner do slider */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+
+.slides img {
+    width: 100%;
+    height: 75vh;
+    display: none;
+    object-fit: cover;
+}
+
+/* Exibe a primeira imagem */
+.slides img:first-child {
+    display: block;
+}
+
+/* Estilos para os botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+    color: aqua;
+}
+
+.next {
+    right: 10px;
+    color:aqua;
+}
+@media (max-width: 600px) {
+    .slides img {
+        width: 100%;
+        height: 30vh;
+        display: none;
+        object-fit: cover;
+        object-position: center;
+    }
+}
