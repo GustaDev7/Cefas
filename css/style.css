@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2563EB;
+    height: 100vh;
+}
+.loginContainer {
+    position: relative;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 50px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+h2 {
+    margin-bottom:1px;
+    color: #333;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+img {
+    width: 160px;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 20px; /* Espaçamento superior para o contêiner */
+}
+
+.input-group input {
+    left: -0.5rem; /* Ajuste para alinhar com o padding do input */
+    font-family: Poppins-Regular, sans-serif;
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    font-family: 'poppins', Arial, sans-serif;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #21d4fd;
+}
+
+.input-group label {
+    position: absolute;
+    top: 12px; /* Ajuste o valor para que o rótulo comece no lugar correto */
+    left: 0; /* Ajuste para alinhar com o padding do input */
+    padding: 0 0.5rem;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #aaa;
+    font-size: 16px;
+    background: transparent; /* Mantém o fundo transparente para sobreposição */
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+    top: -25px; /* Mover o rótulo para cima quando o campo está focado ou preenchido */
+    bottom: 10px;
+    margin: 15px 0px;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px; /* Ajuste a posição do ícone */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    cursor: pointer;
+    font-size: 18px; /* Ajuste o tamanho do ícone conforme necessário */
+    color: #333;
+}
+
+
+.button {
+    background: -moz-linear-gradient(left,#21d4fd,#2563EB);
+    padding: 10px 25px 10px 25px;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    transition: background 0.3 all;
+    width: 100%;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'poppins', Arial, sans-serif;
+    
+   
+}
+.button:hover {
+    background: -moz-linear-gradient(to right,#2563EB, #21d4fd);
+ 
+}
+p{
+    margin-top: 60px;
+    color: #B0B0B0; 
+}
+p a {
+    color: #444;
+    text-decoration: none;
+}
+p a:hover {
+    color: #2563EB;
+}

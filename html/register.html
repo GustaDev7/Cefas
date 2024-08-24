@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+
+    <style>
+        .input-group {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .input-group input {
+            font-family: Poppins-Regular, sans-serif;
+            width: 100%;
+            padding: 12px 0; /* Padding superior e inferior */
+            border: none;
+            border-bottom: 2px solid #21d4fd;
+            background: transparent;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            /* Adiciona padding-left para alinhamento do texto com o rótulo */
+            padding-left: 0.5rem; /* Ajuste conforme necessário */
+            box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+        }
+
+        .input-group input:focus {
+            border-bottom: 2px solid #2563EB;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 12px; /* Ajuste para o rótulo começar na mesma posição vertical do padding */
+            left: 0.5rem; /* Ajuste para alinhar com o padding do input */
+            padding: 0;
+            pointer-events: none;
+            transition: 0.2s ease all;
+            color: #aaa;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        .input-group input:focus ~ label,
+        .input-group input:not(:placeholder-shown) ~ label {
+            top: -20px; /* Move o rótulo para cima */
+            font-size: 12px; /* Reduz o tamanho da fonte */
+            color: #2563EB; /* Cor do rótulo quando o campo está focado ou preenchido */
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="input-group">
+        <input type="text" id="input" placeholder=" " required>
+        <label for="input">Seu Noame</label>
+    </div>
+<script src="../js/register.js"></script>   
+</body>
+</html>
