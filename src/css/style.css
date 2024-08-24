@@ -90,6 +90,7 @@ img {
 
 .button {
     background: -moz-linear-gradient(left,#21d4fd,#2563EB);
+    background: linear-gradient(left,#21d4fd,#2563EB);
     padding: 10px 25px 10px 25px;
     margin-top: 50px;
     border-radius: 15px;
@@ -105,7 +106,7 @@ img {
 }
 .button:hover {
     background: -moz-linear-gradient(to right,#2563EB, #21d4fd);
- 
+    background: linear-gradient(to right,#2563EB, #21d4fd) ;
 }
 p{
     margin-top: 60px;
