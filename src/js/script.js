@@ -2,7 +2,7 @@ function mostrarSenha() {
     var inputPass = document.getElementById('password')
     var btnShowPass = document.getElementById('botaosenha')
 
-    if(inputPass.type === 'password') {
+    if (inputPass.type === 'password') {
         inputPass.setAttribute('type', 'text')
         btnShowPass.classList.replace('bi-eye-fill', 'bi-eye-slash-fill')
     } else {
@@ -14,9 +14,9 @@ function mostrarSenha() {
 /* Inicio da Vlidação*/
 
 const usuarios = [
-    { user: 'Cefas', pass: 'Projeto123', redirect: '../html/cefas.html'},
-    { user: 'MeM', pass: '0303', redirect: '../html/mem.html'},
-    { user: 'Ebenezer', pass: '1234', redirect: '../html/ebenezer.html'}
+    { user: 'Cefas', pass: 'Projeto123', redirect: './src/html/cefas.html' },
+    { user: 'MeM', pass: '0303', redirect: './src/html/mem.html' },
+    { user: 'Ebenezer', pass: '1234', redirect: './src/html/ebenezer.html' }
 ];
 
 let botao = document.getElementById('btnLogar');
